@@ -7,10 +7,51 @@ public class Lab2Progra2_CarlosNoé {
 
     public static void main(String[] args) {
         ArrayList<Gerente> ING = new ArrayList();
+        ArrayList<Meseros> Meseros = new ArrayList();
+        ArrayList<Bartenders> Barten = new ArrayList();
+        ArrayList<Mesas> Mesas = new ArrayList();
+        ArrayList<Chefs> Chefs = new ArrayList();
         ING = PreLogin(ING);
+        Scanner k1ng = new Scanner(System.in);
         boolean Log = true;
         while (Log == true) {
-            
+            System.out.println("--Bienvenido al menu--");
+            System.out.println("Ingrese el numero adecuado a la opcion que desea ingresar: ");
+            System.out.println("Opcion 1. Menu Chefs");
+            System.out.println("Opcion 2. Menu Meseros");
+            System.out.println("Opcion 3. Menu Bartenders");
+            System.out.println("Opcion 4. Menu Mesas");
+            System.out.println("Opcion 5. Cerrar Sesion / Salida");
+
+            int menu = k1ng.nextInt();
+            for (int x = 0; x < 1; x++) {
+                while (menu != 5) {
+                    if ((menu > 0) && (menu < 6)) {
+                        x++;
+                        switch (menu) {
+                            case 1:
+                                System.out.println("--Bienvenido al submenu Chefs--");
+                                break;
+
+                            case 2:
+                                System.out.println("--Bienvenido al submenu Meseros--");
+                                break;
+
+                            case 3:
+                                System.out.println("--Bienvenido al submenu Bartenders--");
+                                break;
+
+                            case 4:
+                                System.out.println("--Bienvenido al submenu Mesas--");
+
+                                break;
+                        }
+                    } else {
+                        x--;
+                    }
+                }
+             Log=false;   
+            }
         }
     }
 
@@ -45,7 +86,21 @@ public class Lab2Progra2_CarlosNoé {
             System.out.println("Usuario o Contrasenya Equivocados");
             return Login(Key, ING);
         }
+    }
+
+    public static void CRUDChefs(ArrayList<Chefs> ING) {
         
+    }
+
+    public static void CRUDMeseros(ArrayList<Meseros> ING) {
+
+    }
+
+    public static void CRUDBartenders(ArrayList<Bartenders> ING) {
+
+    }
+
+    public static void CRUDMesas(ArrayList<Mesas> ING) {
 
     }
 
