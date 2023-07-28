@@ -1,20 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package lab2progra2_carlosnoé;
 
-/**
- *
- * @author cd507
- */
+import java.util.Scanner;
+
 public class Lab2Progra2_CarlosNoé {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        boolean Log=true;
+        while (Log=true) {            
+            
+        
+        }
     }
+    public static boolean Login(boolean Key){
+        Scanner k1ng = new Scanner(System.in);
+        System.out.println("Bienvenido al Login de Gerentes");
+        System.out.println("Ingrese su nombre de usuario");
+        
+    }    
+        
+    
     
 }
